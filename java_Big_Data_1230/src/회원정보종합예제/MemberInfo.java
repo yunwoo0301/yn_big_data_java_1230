@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class MemberInfo { // 필드와 메소드가 있음
 
 
-}
-
     // 필드 추가하기 : 필드란? 클래스 내부에서 사용하는 변수를 의미(객체 생성 시 객체 갯수 만큼 생성됨)
     String name;
     int age;
@@ -19,18 +17,20 @@ public class MemberInfo { // 필드와 메소드가 있음
         System.out.print("이름을 입력하세요 :");
         name = sc.next();
     }
+
     // 주어진 조건에 맞는 나이를 입력 받아 age 필드에 저장
     public void setAge() {
         while (true) {
             System.out.print("나이를 입력 하세요 : ");
-            age =sc.nextInt();
-            if(age >0&&age< 200)return;
+            age = sc.nextInt();
+            if (age > 0 && age < 200) return;
             System.out.println("나이를 잘못 입력 하셨습니다.");
         }
     }
+
     // 주어진 조건에 맞는 성별을 입력 받아 gender 필드에 저장
     public void setGender() {
-        while(true) {
+        while (true) {
             System.out.print("성별을 입력하세요 : ");
             gender = sc.next().charAt(0); // 문자열에서 첫번째 문자를 입력 받음
             switch (gender) {
@@ -44,6 +44,7 @@ public class MemberInfo { // 필드와 메소드가 있음
             }
         }
     }
+
     // 주어진 조건에 맞는 직업을 입력 받아 jobs 필드에 저장
     public void setJobs() {
         while (true) {
@@ -54,18 +55,25 @@ public class MemberInfo { // 필드와 메소드가 있음
         }
 
     }
+
     public int getGenderType() {
-        if(gender == 'M' || gender == 'm') return 1;
+        if (gender == 'M' || gender == 'm') return 1;
         else return 2;
     }
+
     public void viewInfo() {
         String[] genderStr = {"", "남성", "여성"};
         String[] jobsStr = {"", "학생", "회사원", "주부", "무직"};
         System.out.println("======= 회원 정보 출력 =======");
         System.out.println("이름 : " + name);
         System.out.println("나이 : " + age);
-        System.out.println("성별 : " + gender)
+        System.out.println("성별 : " + genderStr[getGenderType()]);
 
-
-
+    }
 }
+
+
+
+
+
+
