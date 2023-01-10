@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         String d = "Hello J Jav Java";
-        System.out.println(d.replaceAll("Hello, ", "hELLO"));
+        String e = "Hello Java";
+        System.out.println(e.substring(6)); // 시작 인덱스 부터 끝까지 추출
+        System.out.println((e.substring(1, 4)));
 
 
 
