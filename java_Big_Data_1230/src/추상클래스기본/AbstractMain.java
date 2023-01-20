@@ -3,7 +3,7 @@ import java.util.Scanner;
 // 추상 클래스란? 실체가 없는 부모가 상속을 주는 것
 // 추상클래스에는 반드시 추상메소드가 포함되어야 하고, 해당 메소드는 상속 받은 자식 클래스에서 구현해줘야함(오버라이딩)
 // 추상클래스는 키워드는 abstract
-// 추상클래스는 일반 메소드, 추사 메소드, 읿반 필드 등을 모두 포함할 수 있음
+// 추상클래스는 일반 메소드, 추사 메소드, 일반 필드 등을 모두 포함할 수 있음
 public class AbstractMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
