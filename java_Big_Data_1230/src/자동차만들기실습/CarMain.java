@@ -11,12 +11,17 @@ public class CarMain {
         int personNum = sc.nextInt();
         System.out.println("이동차량을 선택하세요 [1]스포츠카 [2]승용차 [3]버스");
         int vhc = sc.nextInt();
+        System.out. print("부가 기능 [1]ON [2]OFF : ");
+        int option = sc.nextInt();
         switch (vhc) {
             case 1 : SportsCar sportsCar = new SportsCar("스포츠카");
             case 2 : MiNi mini = new MiNi("승용차");
             case 3 : Bus bus = new Bus("버스");
             default: System.out.println("차량 선택이 잘못 되었습니다.");
         }
+
+
+
 
 
 

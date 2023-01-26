@@ -55,10 +55,10 @@ public abstract class Car {
     }
     class Bus extends Car {
           Bus(String name) {
-            int mileage = 12;
-            speed = 200;
-            tank = 45;
-            seats = 4;
+            int mileage = 5;
+            speed = 150;
+            tank = 100;
+            seats = 20;
             this.name = name;
         }
 
@@ -67,6 +67,7 @@ public abstract class Car {
             if (tank == 1)
                 isTank = true;
             tank += 30;
+
         }
 
             void infoBus() {
