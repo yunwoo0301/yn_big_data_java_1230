@@ -1,4 +1,4 @@
-package 제너릭일반;
+package 제네릭일반;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +10,8 @@ public class GenericTestEx {
 //        list.add("안녕하세요.");
 //        String str = (String) list.get(0);
         // 제너릭 타입
-        // List 에 사용할 데이터 타입이 미리 지정함으로 컴파일 시 타입체크가 일어나도록 함. <String> 강한 타입 : 문자열
+        // List 에 사용할 데이터 타입이 미리 지정함으로 컴파일 시 타입체크가 일어나도록 함.
+        // <String> 강한 타입 : 문자열
         List<String> list = new ArrayList<>();
         list.add("hello");
         String str = list.get(0); // 0번째 값을 읽어옴

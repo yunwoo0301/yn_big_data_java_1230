@@ -9,7 +9,7 @@ public class LottoArrayList {
         int tmp; // 로또 번호를 임시로 저장하는 변수
         while(true) {
             tmp = (int)((Math.random() * 45) + 1);
-            if(list.contains(tmp)) list.add(tmp);  // 내부의 리스트에 포함되어있는지 여부
+            if(!list.contains(tmp)) list.add(tmp);  // 내부의 리스트에 포함되어있는지 여부(중복 여부 체크)
             if(list.size() == 6) break;
         }
         for(Integer e : list) System.out.print(e + " ");

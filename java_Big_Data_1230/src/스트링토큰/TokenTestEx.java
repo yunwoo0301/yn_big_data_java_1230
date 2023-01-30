@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 // hasMoreTokens() : 남아있는 토큰이 있는지 여부 확인 (있으면 true)
 // nextToken() : 토큰을 하나씩 꺼내옴
 // String split() : 구분자 기준으로 문자열 자름
-//public class TokenTestEx {
+// public class TokenTestEx {
 //    public static void main(String[] args) {
 //        int idx = 0;
 //        Scanner sc = new Scanner(System.in);
