@@ -26,6 +26,7 @@ import java.util.TreeSet;
         System.out.print("학생의 수 : ");
         int n = sc.nextInt();
         int cnt = 0; // 석차 입력값
+        int preScore = 0; // 이전스코어와 비교(석자 동일 여부)
         for (int i = 0; i < n; i++) { // 입력 받은 학생 수 만큼 순화
             ts.add(new StudentInfo(sc.next(), sc.nextInt(), sc.nextLine()));
         }
@@ -34,8 +35,9 @@ import java.util.TreeSet;
         System.out.println("석차   성적   이름   학번");
         System.out.println("----------------------");
         for (StudentInfo e : ts) {
-
-            System.out.printf("%2d%5d%5s%5s\n", ++cnt, e.score, e.name, e.number);
+            if(preScore != e.score) cnt++;
+            System.out.printf("%2d%5d%5s%5s\n", cnt, e.score, e.name, e.number);
+            preScore = e.score; // 현재 점수를 변수에 저장
         }
         System.out.println("----------------------");
     }
