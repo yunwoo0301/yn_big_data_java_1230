@@ -1,4 +1,4 @@
-package 배열예제진법변환;
+package 진법예제변환;
 
 import java.util.Scanner;
 
