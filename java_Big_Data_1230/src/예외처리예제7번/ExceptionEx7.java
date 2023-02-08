@@ -21,6 +21,7 @@ class EvenException extends Exception {
     private Integer number = null;
 
     public EvenException(Integer number) {
+
         this.number = number;
     }
     @Override
@@ -28,14 +29,14 @@ class EvenException extends Exception {
         if(number == null) {
             return "숫자가 아닙니다.";
         } else {
-            return Integer.toString(number) + "는 짝수가 아닙니다."
+            return Integer.toString(number) + "는 짝수가 아닙니다.";
         }
     }
 }
 class CheckEven {
     private int num;
 
-    public CheckEven(int num) {
+    public void setNum(int num) {
         this.num = num;
     }
     public int printEven(int number) throws EvenException {
