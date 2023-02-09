@@ -1,4 +1,4 @@
-package 상근날드;
+package 상근날드실습;
 
 import java.util.Scanner;
 
